@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+$violet: hsl(257, 40%, 49%);
+$magenta: hsl(300, 69%, 71%);
+
+*{box-sizing: border-box;}
+
+html{font-size: 62.5%;}
+
+body{margin: 0; font-family: "Open sans", sans-serif; background: url("../images/bg-desktop.svg") no-repeat $violet; background-size: 91.5%;
+    main{display: grid; justify-content: center; min-height: 100vh;
+        .container{width: 100vw; max-width: 1440px; padding: 53px 70px 39px; position: relative;
+            img{max-width: 100%; display: block;}
+            .container__header{
+                img{max-width: 214px;}
+            }
+            .container__body{display: flex; gap: 54px;               
+                .container__left{flex: 0 1 712px; padding-top: 87px; padding-left: 3px;}
+                .container__right{flex:1; padding: 131px 0 0;
+                    h1,p{margin: 0; color: white;}
+                    h1{font-size: 3.9rem; font-weight: 600; letter-spacing: 0.04rem; line-height: 5.9rem; font-family: "Poppins", sans-serif;}
+                    p{font-size: 1.8rem; font-weight: 400; line-height: 2.7rem; padding-right: 10px; margin: 21px 0px 24px;}
+                    button{cursor: pointer; transition: background-color 0.2s; will-change: background-color; color:$violet; font-family: "Poppins", sans-serif; border: none; background: white; align-self: flex-start; height: 56px; width: 200px; display: flex; align-items: center; justify-content: center; border-radius: 30px; font-size: 1.8rem; font-weight: 400; padding-top: 0px; padding-left: 5px; margin-left: -1px; box-shadow: 0px 6px 12px 1px rgba(0, 0, 0, 0.3);
+                        &:hover{background-color: $magenta; color:white;}
+                    }                    
+                }
+            }
+            ul{margin: 0; padding: 0; display: flex; gap:17px; position: absolute; bottom:40px; right:80px;
+                li{list-style: none; cursor: pointer; height: 39px; width: 39px; border-radius: 100%; border: 1px solid white; display: flex; align-items: center; justify-content: center;
+                    i{font-size: 1.8rem; color:white}     
+                    &:hover{border-color: $magenta;
+                        i{color: $magenta}
+                    }               
+                }
+            }
+
+            @media(max-width:1260px){
+                .container__body{
+                    .container__left{flex: 1 1 170px;}
+                    .container__right{
+                        h1{font-size: 3.5rem; line-height: 4.3rem;}
+                        p{font-size: 1.8rem; line-height: 2.7rem;}
+                    }
+                }
+            }
+
+            @media(max-width:1075px){
+                .container__body{
+                    .container__right{padding: 84px 0 0;}
+                    .container__left{flex: 1 1 100px; display: flex; align-items: center;}
+                }
+            }
+
+            @media(max-width:830px){width: 89vw; padding: 53px 0px 39px;            
+                .container__body{flex-direction: column;
+                    .container__right{padding: 0; text-align: center;
+                        h1{font-size: 2.4rem; line-height: 3.6rem;}
+                        p{font-size: 1.6rem; line-height: 2.4rem; padding: 0; margin: 15px 0px 24px;}
+                        button{margin: 0 auto; margin-bottom: 100px; margin-top: 40px; width: 280px; height: 52px;}
+                    }
+                    .container__left{flex: 1;}
+                }
+                ul{position: static; justify-content: center;}
+            }
+
+            @media(max-width:500px){padding: 30px 0px 39px; max-width: 80vw;
+                .container__header{
+                    img{max-width: 145px;}
+                }   
+                .container__body{gap:67px;                  
+                    .container__left{padding-top: 60px; padding-left: 0;}
+                }              
+            }
+
+            @media(max-width:350px){                
+                .container__body{               
+                    .container__right{
+                        button{width: 100%;}
+                    }
+                }              
+            }
+        }
+    }
+    @media(max-width:1439px){
+        background-size: cover;
+    }
+    @media(max-width:830px){
+        background: url("../images/bg-mobile.svg") no-repeat $violet;
+        background-size: contain;
+    }
+}

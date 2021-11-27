@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: "Open sans", sans-serif;
+  background: url("../images/bg-desktop.svg") no-repeat #674baf;
+  background-size: 91.5%;
+}
+
+body main {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+}
+
+body main .container {
+  width: 100vw;
+  max-width: 1440px;
+  padding: 53px 70px 39px;
+  position: relative;
+}
+
+body main .container img {
+  max-width: 100%;
+  display: block;
+}
+
+body main .container .container__header img {
+  max-width: 214px;
+}
+
+body main .container .container__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 54px;
+}
+
+body main .container .container__body .container__left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 712px;
+          flex: 0 1 712px;
+  padding-top: 87px;
+  padding-left: 3px;
+}
+
+body main .container .container__body .container__right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 131px 0 0;
+}
+
+body main .container .container__body .container__right h1, body main .container .container__body .container__right p {
+  margin: 0;
+  color: white;
+}
+
+body main .container .container__body .container__right h1 {
+  font-size: 3.9rem;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  line-height: 5.9rem;
+  font-family: "Poppins", sans-serif;
+}
+
+body main .container .container__body .container__right p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.7rem;
+  padding-right: 10px;
+  margin: 21px 0px 24px;
+}
+
+body main .container .container__body .container__right button {
+  cursor: pointer;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  will-change: background-color;
+  color: #674baf;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  background: white;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  height: 56px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 30px;
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-top: 0px;
+  padding-left: 5px;
+  margin-left: -1px;
+  -webkit-box-shadow: 0px 6px 12px 1px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 6px 12px 1px rgba(0, 0, 0, 0.3);
+}
+
+body main .container .container__body .container__right button:hover {
+  background-color: #e882e8;
+  color: white;
+}
+
+body main .container ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 17px;
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+}
+
+body main .container ul li {
+  list-style: none;
+  cursor: pointer;
+  height: 39px;
+  width: 39px;
+  border-radius: 100%;
+  border: 1px solid white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .container ul li i {
+  font-size: 1.8rem;
+  color: white;
+}
+
+body main .container ul li:hover {
+  border-color: #e882e8;
+}
+
+body main .container ul li:hover i {
+  color: #e882e8;
+}
+
+@media (max-width: 1260px) {
+  body main .container .container__body .container__left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 170px;
+            flex: 1 1 170px;
+  }
+  body main .container .container__body .container__right h1 {
+    font-size: 3.5rem;
+    line-height: 4.3rem;
+  }
+  body main .container .container__body .container__right p {
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+}
+
+@media (max-width: 1075px) {
+  body main .container .container__body .container__right {
+    padding: 84px 0 0;
+  }
+  body main .container .container__body .container__left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100px;
+            flex: 1 1 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media (max-width: 830px) {
+  body main .container {
+    width: 89vw;
+    padding: 53px 0px 39px;
+  }
+  body main .container .container__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .container .container__body .container__right {
+    padding: 0;
+    text-align: center;
+  }
+  body main .container .container__body .container__right h1 {
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+  }
+  body main .container .container__body .container__right p {
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    padding: 0;
+    margin: 15px 0px 24px;
+  }
+  body main .container .container__body .container__right button {
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 40px;
+    width: 280px;
+    height: 52px;
+  }
+  body main .container .container__body .container__left {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+  }
+  body main .container ul {
+    position: static;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  body main .container {
+    padding: 30px 0px 39px;
+    max-width: 80vw;
+  }
+  body main .container .container__header img {
+    max-width: 145px;
+  }
+  body main .container .container__body {
+    gap: 67px;
+  }
+  body main .container .container__body .container__left {
+    padding-top: 60px;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 350px) {
+  body main .container .container__body .container__right button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1439px) {
+  body {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 830px) {
+  body {
+    background: url("../images/bg-mobile.svg") no-repeat #674baf;
+    background-size: contain;
+  }
+}
